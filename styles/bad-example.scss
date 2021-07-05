@@ -1,0 +1,133 @@
+#bad-example-container {
+  margin-top: 10rem;
+  width: 3000px;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  color: #b5b5b5;
+
+  #inner-wrapper-bad {
+    max-width: 50rem;
+    margin-left: 34.55rem;
+  }
+
+  .divider {
+    border: 1px solid #b5b5b5;
+    width: 13rem;
+    margin: 2rem 0 0 18rem;
+  }
+
+  .margin-top {
+    margin-top: 19.92px;
+  }
+
+  #intro-image {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .heading-one,
+  .heading-two {
+    font-size: 40px;
+    margin: 19.92px 0;
+  }
+
+  .heading-one {
+    background: #000;
+    color: #c2c2c2;
+    display: inline;
+  }
+
+  .heading-three {
+    font-size: 29px;
+    margin: 18.72px 0;
+  }
+
+  .list-item,
+  .paragraph,
+  .input-label,
+  .progress-label,
+  .user-input {
+    font-size: 24px;
+  }
+
+  .paragraph {
+    margin: 16px 0;
+    line-height: 0.75;
+  }
+
+  // Common failures
+
+  .progress-wrapper {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .progress-label {
+      margin-right: 1rem;
+    }
+
+    .progress-bar {
+      height: 24px;
+      width: 15rem;
+
+      .progress-value {
+        display: block;
+        height: 100%;
+        border-radius: 5px;
+        background: var(--light-blue);
+      }
+    }
+  }
+
+  // Form example
+
+  .input-wrapper {
+    display: flex;
+    margin-bottom: 1rem;
+
+    .input-label {
+      margin-right: 1rem;
+    }
+
+    .user-input {
+      border: 1px solid #000;
+      background: #fff;
+      color: #f0f0f0;
+      border-radius: 5px;
+      padding: 0 1%;
+      width: 30rem;
+      font-size: 24px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  // Input examples
+
+  .checkbox-bad-wrapper,
+  .radio-button-bad-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+
+    input[type='checkbox'],
+    input[type='radio'] {
+      width: 20px;
+      height: 20px;
+      margin-right: 1rem;
+    }
+  }
+
+  // Image example
+
+  .animal-image {
+    margin-bottom: 1rem;
+  }
+}
