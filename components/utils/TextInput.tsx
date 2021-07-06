@@ -4,7 +4,7 @@ interface Props {
   id: string;
   inputType: string;
   content: string;
-  placeholder: string;
+  placeholder?: string;
 }
 
 export default function TextInput({ id, inputType, content, placeholder }: Props): ReactElement {
