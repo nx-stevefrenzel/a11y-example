@@ -7,6 +7,7 @@ import Checkbox from '@components/utils/Checkbox';
 import RadioButton from '@components/utils/RadioButton';
 import ExternalLink from '@components/utils/ExternalLink';
 import workers from '@images/workers.png';
+import nyanCat from '@images/nyan-cat.gif';
 import dog from '@images/dog.jpg';
 import cat from '@images/cat.jpg';
 import horse from '@images/horse.jpg';
@@ -59,22 +60,22 @@ export default function goodExample() {
             <h3>Causes of most common accessibility failures (% of websites)</h3>
             <ul className="unordered-list">
               <li>
-                <Progress id="contrast" value="86.3" content="86,3%: Low contrast text" />
+                <Progress value="86.3" content="86,3%: Low contrast text" />
               </li>
               <li>
-                <Progress id="image" value="66" content="66%: Missing image alt text" />
+                <Progress value="66" content="66%: Missing image alt text" />
               </li>
               <li>
-                <Progress id="links" value="59.9" content="59,9%: Empty links" />
+                <Progress value="59.9" content="59,9%: Empty links" />
               </li>
               <li>
-                <Progress id="input" value="53.8" content="53,8%: Missing form input labels" />
+                <Progress value="53.8" content="53,8%: Missing form input labels" />
               </li>
               <li>
-                <Progress id="buttons" value="28.7" content="28,7%: Empty buttons" />
+                <Progress value="28.7" content="28,7%: Empty buttons" />
               </li>
               <li>
-                <Progress id="language" value="28" content="28%: Missing document language" />
+                <Progress value="28" content="28%: Missing document language" />
               </li>
             </ul>
             <hr aria-hidden="true" />
@@ -143,6 +144,9 @@ export default function goodExample() {
             {/* Picture examples */}
             <h2>Picture example</h2>
             <br />
+            <figure id="nyan-cat">
+              <Image src={nyanCat} alt="Dog with yellow sweatshirt" />
+            </figure>
             <Image src={dog} alt="Dog with yellow sweatshirt" placeholder="blur" />
             <Image src={cat} alt="Fat cat in front of pink background" placeholder="blur" />
             <Image src={horse} alt="Horse showing it's tongue and teeth" placeholder="blur" />
