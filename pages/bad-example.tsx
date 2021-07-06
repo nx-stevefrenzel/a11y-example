@@ -5,6 +5,7 @@ import RadioButton from '@utils/RadioButtonBad';
 import Link from '@utils/FakeLink';
 
 const workers = require('../public/images/workers.png');
+const nyanCat = require('../public/images/nyan-cat.gif');
 const dog = require('../public/images/dog.jpg');
 const cat = require('../public/images/cat.jpg');
 const horse = require('../public/images/horse.jpg');
@@ -141,6 +142,7 @@ export default function badExample() {
 
           <div className="heading-two">Picture example</div>
 
+          <img src={nyanCat.default.src} className="animal-image" />
           <img src={dog.default.src} className="animal-image" />
           <img src={cat.default.src} className="animal-image" />
           <img src={horse.default.src} className="animal-image" />
