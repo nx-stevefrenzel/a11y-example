@@ -19,7 +19,7 @@
 
     h1 {
       display: inline;
-      background: var(--black);
+      background: #000;
       color: var(--white);
       padding: 0 1%;
     }
@@ -29,6 +29,13 @@
       border: 1px solid #000;
       width: 25%;
       margin: 2rem auto;
+    }
+
+    .unordered-list {
+      list-style-type: square;
+      li {
+        margin-bottom: 1rem;
+      }
     }
 
     .progress-bar {
@@ -98,15 +105,25 @@
     input[type='submit'] {
       border: none;
       background: var(--light-blue);
-      color: var(--white);
+      color: #000;
       font-weight: bold;
       padding: 0 2%;
       cursor: pointer;
-      transition: 0.5s ease;
+      transition: 0.2s ease;
 
       &:hover,
       &:focus {
-        background: var(--black);
+        background: #000;
+        color: #fff;
+      }
+    }
+
+    fieldset {
+      border: 2px solid #000;
+
+      legend {
+        font-size: 2rem;
+        padding: 0 1%;
       }
     }
 
@@ -115,10 +132,11 @@
       display: flex;
       align-items: center;
 
-      &:hover {
+      &:hover,
+      &:focus {
         label,
         input {
-          outline: 1px solid var(--light-blue);
+          outline: 1px solid #000;
         }
       }
 
@@ -138,5 +156,30 @@
         }
       }
     }
+  }
+}
+// Skip link
+
+[href='#main'] {
+  z-index: 666;
+  position: absolute;
+  top: 1rem;
+  right: 100%;
+  margin: 1rem;
+  padding: 1%;
+  font-size: 1.5rem;
+  &:active,
+  &:focus {
+    background: blue;
+    color: #fff;
+    right: auto;
+  }
+}
+
+// External link
+
+.external-link {
+  &::after {
+    content: ' ↗';
   }
 }
