@@ -157,6 +157,12 @@
       }
     }
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    #nyan-cat {
+      display: none;
+    }
+  }
 }
 // Skip link
 
