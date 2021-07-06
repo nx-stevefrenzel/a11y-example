@@ -56,6 +56,7 @@
   .paragraph {
     margin: 16px 0;
     line-height: 0.75;
+    width: 1280px;
   }
 
   // Common failures
@@ -122,6 +123,12 @@
       width: 20px;
       height: 20px;
       margin-right: 1rem;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        cursor: text;
+      }
     }
   }
 
