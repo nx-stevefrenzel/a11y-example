@@ -40,7 +40,7 @@ export default function goodExample() {
               <ExternalLink
                 url="https://globalaccessibilityawarenessday.org/"
                 content="Global Accessibility Awareness Day"
-              />
+              />{' '}
               (GAAD), a global event that shines a light on digital access and inclusion for people
               with disabilities.
             </p>
@@ -48,8 +48,8 @@ export default function goodExample() {
             <h2>State of accessibility</h2>
             <br />
             <p>
-              In 2020, <ExternalLink url="https://webaim.org/" content="WebAIM" />
-              analyzed one million websites for accessibility issues and found out that
+              In 2020, <ExternalLink url="https://webaim.org/" content="WebAIM" /> analyzed one
+              million websites for accessibility issues and found out that
             </p>
             <ul>
               <li>98.1% of homepages have at least on WCAG 2.0 Failure</li>
