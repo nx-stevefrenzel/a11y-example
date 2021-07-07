@@ -2,6 +2,7 @@
   margin-top: 10rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: 1.75rem;
@@ -156,6 +157,10 @@
         }
       }
     }
+  }
+
+  figure#nyan-cat {
+    margin: 0;
   }
 
   @media (prefers-reduced-motion: reduce) {
