@@ -8,14 +8,38 @@
   font-size: 1.75rem;
   padding: 0 5%;
 
+  @media screen and (max-width: 60rem) {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+  }
+
   #inner-wrapper {
     max-width: 60rem;
 
-    figure {
-      text-align: center;
-      max-width: 500px;
+    #hero-image {
+      max-width: 75%;
       height: auto;
-      margin: 0 auto 60px auto;
+      margin: 0 auto;
+
+      @media screen and (max-width: 60rem) {
+        max-width: 100%;
+      }
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+
+      figcaption {
+        font-size: 1.5rem;
+        font-style: oblique;
+
+        @media screen and (max-width: 60rem) {
+          font-size: 1.25rem;
+        }
+      }
     }
 
     h1 {
@@ -36,42 +60,6 @@
       list-style-type: square;
       li {
         margin-bottom: 1rem;
-      }
-    }
-
-    .progress-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      @media screen and (max-width: 40rem) {
-        flex-direction: column;
-        progress {
-          margin-top: 1rem;
-        }
-      }
-
-      progress,
-      progress::-webkit-progress-bar,
-      progress::-webkit-progress-value {
-        border-radius: 5px;
-      }
-
-      progress {
-        border: 1px solid lightgray;
-      }
-
-      progress[value] {
-        -webkit-appearance: none;
-        appearance: none;
-
-        &::-webkit-progress-bar {
-          background-color: #eee;
-        }
-
-        &::-webkit-progress-value {
-          background-color: var(--light-blue);
-        }
       }
     }
 
@@ -97,8 +85,9 @@
         border: 1px solid lightgray;
         border-radius: 5px;
 
-        &::placeholder {
-          color: lightgray;
+        &:hover,
+        &:focus {
+          background: #eee;
         }
       }
     }
@@ -111,6 +100,11 @@
       padding: 0 2%;
       cursor: pointer;
       transition: 0.2s ease;
+      border-radius: 5px;
+
+      @media screen and (max-width: 40rem) {
+        width: 100%;
+      }
 
       &:hover,
       &:focus {
@@ -125,6 +119,10 @@
       legend {
         font-size: 2rem;
         padding: 0 1%;
+
+        @media screen and (max-width: 40rem) {
+          font-size: 1.75rem;
+        }
       }
     }
 
@@ -160,7 +158,7 @@
   }
 
   figure#nyan-cat {
-    margin: 0;
+    margin: 0 auto;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -190,6 +188,14 @@
 // External link
 
 .external-link {
+  transition: 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background: #000;
+    color: #fff;
+  }
+
   &::after {
     content: ' ↗';
   }
