@@ -1,4 +1,4 @@
-nav {
+header {
   z-index: 666;
   background-color: var(--white);
   position: fixed;
@@ -10,7 +10,13 @@ nav {
   overflow-y: scroll;
   white-space: nowrap;
 
-  ul {
+  .active {
+    background: #2c2c2c;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  ol {
     list-style-type: none;
     padding: 0;
     margin: 1rem 0 0 0;
@@ -34,6 +40,7 @@ nav {
     margin: 0 1rem;
     font-size: 1.2rem;
     color: var(--black);
+    transition: 0.2s ease;
 
     @media screen and (max-width: 30rem) {
       font-size: 1rem;
@@ -41,8 +48,9 @@ nav {
 
     &:hover,
     &:active {
-      background: var(--light-blue);
-      color: var(--white);
+      background: #2c2c2c;
+      color: #fff;
+      border-radius: 5px;
     }
   }
 }
