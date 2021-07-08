@@ -14,7 +14,7 @@ export default function badExample() {
   return (
     <>
       <Head>
-        <title>Bad Example 👎</title>
+        <title>Bad Example | Web Accessibility</title>
       </Head>
       <div id="bad-example-container">
         <div id="inner-wrapper-bad">
@@ -43,6 +43,8 @@ export default function badExample() {
           {/* State */}
 
           <div className="heading-two">State of accessibility</div>
+
+          <img src={dog.default.src} className="animal-image" />
 
           <div className="paragraph">
             In 2020, WebAIM (<Link url="https://webaim.org/" content="more info" />) analyzed one
@@ -77,6 +79,8 @@ export default function badExample() {
             Check out this list of four great looking and accessible websites:
           </div>
 
+          <img src={cat.default.src} className="animal-image" />
+
           <div className="ordered-list">
             <div className="list-item">
               1. Chase Bank: <Link url="https://www.chase.com/" content="CLICK" />
@@ -100,6 +104,8 @@ export default function badExample() {
           {/* Form example */}
           <div className="heading-two">Form example</div>
 
+          <img src={nyanCat.default.src} className="animal-image" />
+
           <div className="input-wrapper">
             <div className="input-label">Enter your name:</div>
             <div contentEditable="true" className="user-input">
@@ -114,11 +120,15 @@ export default function badExample() {
             </div>
           </div>
 
+          <a className="button">SUBMIT FORM</a>
+
           <div className="divider"></div>
 
           {/* Input example */}
 
           <div className="heading-two">Input examples</div>
+
+          <img src={horse.default.src} className="animal-image" />
 
           <div className="heading-three">Select your favorite ice cream:</div>
 
@@ -137,15 +147,6 @@ export default function badExample() {
           <RadioButton content="Perseverance" />
 
           <div className="divider"></div>
-
-          {/* Picture example */}
-
-          <div className="heading-two">Picture example</div>
-
-          <img src={nyanCat.default.src} className="animal-image" />
-          <img src={dog.default.src} className="animal-image" />
-          <img src={cat.default.src} className="animal-image" />
-          <img src={horse.default.src} className="animal-image" />
         </div>
       </div>
     </>
