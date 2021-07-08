@@ -15,7 +15,7 @@
   .divider {
     border: 1px solid #b5b5b5;
     width: 13rem;
-    margin: 18rem;
+    margin: 9rem;
   }
 
   .margin-top {
@@ -107,6 +107,20 @@
       &:focus {
         outline: none;
       }
+    }
+  }
+
+  .button {
+    background: var(--light-blue);
+    color: #fff;
+    padding: 1%;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
     }
   }
 
