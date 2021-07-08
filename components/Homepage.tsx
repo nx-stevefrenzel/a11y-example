@@ -1,44 +1,16 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Head from 'next/head';
-import world from '@images/world.png';
+import ExternalLink from './utils/ExternalLink';
 import collab from '@images/collab.png';
 
 export default function Homepage() {
   return (
     <>
       <Head>
-        <title>Benefits of an accessible website</title>
+        <title>Web Accessibility - Essential for some, useful for all.</title>
       </Head>
       <section id="homepage-wrapper">
         <div className="inner-wrapper">
-          <figure id="world">
-            <Image src={world} alt="Illustration of a globe" />
-          </figure>
-          <h1>Benefits of an accessible website </h1>
-          <br />
-          <br />
-          <p>
-            Accessible websites allow a wide range of people to consume and interact with the
-            content on them. But despite many resources, tools and people actively pushing the
-            issue, this topic is only a minor aspect in the tech industry.
-            <br />
-            <br />
-            The reasons for this are as numerous as they are varied. I myself attended a coding
-            bootcamp and only realized in retrospect that I would have been better off putting the
-            basics into practice if I had come into contact with the topic earlier.
-            <br />
-            <br />
-            This talk is not just for developers, but anyone who can identify with the idea that
-            everyone can use websites without limitations. I will illustrate this with two websites
-            that are visually almost identical, but differ greatly in their usability.
-            <br />
-            <br />
-            The differences will become especially clear if you try to navigate on them only with
-            the keyboard or only with a screen reader. I will also show how to quickly and easily
-            examine a website with selected browser tools.
-          </p>
-          <br />
           <figure id="collab">
             <Image src={collab} alt="Two people working on a user interface" />
           </figure>
@@ -57,21 +29,63 @@ export default function Homepage() {
           <p>
             If you are not sure how to use a screen reader, here is an excellent tutorial on the
             subject:{' '}
-            <Link href="https://www.codecademy.com/articles/how-to-setup-screen-reader">
-              How to setup a screen reader
-            </Link>
+            <ExternalLink
+              url="https://www.codecademy.com/articles/how-to-setup-screen-reader"
+              content="How to setup a screen reader"
+            />
           </p>
           <br />
           <p>Other tools for a simple, quick analysis of the accessibility of a website are:</p>
           <ul>
             <li>
-              <Link href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</Link>
+              <ExternalLink url="https://web.dev/measure/" content="Google Lighthouse" />
             </li>
             <li>
-              <Link href="https://accessibilityinsights.io/">Accessibility Insights</Link>
+              <ExternalLink
+                url="https://wave.webaim.org/"
+                content="WAVE Web Accessibility Evaluation Tool"
+              />
             </li>
             <li>
-              <Link href="https://webaim.org/resources/contrastchecker/">Contrast Checker</Link>
+              <ExternalLink
+                url="https://accessibilityinsights.io/"
+                content="Accessibility Insights"
+              />
+            </li>
+            <li>
+              <ExternalLink
+                url="https://webaim.org/resources/contrastchecker/"
+                content="Contrast Checker"
+              />
+            </li>
+            <li>
+              Browser developer tools{' '}
+              <ul>
+                <li>
+                  <ExternalLink
+                    url="https://developer.chrome.com/docs/devtools/overview/#open"
+                    content="Google Chrome"
+                  />
+                </li>
+                <li>
+                  <ExternalLink
+                    url="https://developer.mozilla.org/en-US/docs/Tools#the_core_tools"
+                    content="Firefox"
+                  />
+                </li>
+                <li>
+                  <ExternalLink
+                    url="https://support.apple.com/en-gb/guide/safari/sfri20948/mac"
+                    content="Safari"
+                  />
+                </li>
+                <li>
+                  <ExternalLink
+                    url="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/#open-the-devtools"
+                    content="Microsoft Edge"
+                  />
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
