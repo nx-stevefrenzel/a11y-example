@@ -46,6 +46,8 @@ export default function badExample() {
 
           <img src={dog.default.src} className="animal-image" />
 
+          <br />
+
           <div className="paragraph">
             In 2020, WebAIM (<Link url="https://webaim.org/" content="more info" />) analyzed one
             million websites for accessibility issues and found out that
@@ -56,20 +58,20 @@ export default function badExample() {
             <div className="list-item">• 60.9 is the average number of errors per homepage</div>
           </div>
 
-          <div className="divider"></div>
-
           {/* Common failures */}
 
           <div className="heading-three">
             Causes of most common accessibility failures (% of websites)
           </div>
 
-          <Progress content="86,3%: Low contrast text" style={{ width: '86.3%' }} />
-          <Progress content="66%: Missing image alt text" style={{ width: '66%' }} />
-          <Progress content="59,9%: Empty links" style={{ width: '59.9%' }} />
-          <Progress content="53,8%: Missing form input labels" style={{ width: '53.8%' }} />
-          <Progress content="28,7%: Empty buttons" style={{ width: '28.7%' }} />
-          <Progress content="28%: Missing document language" style={{ width: '28%' }} />
+          <div className="unordered-list">
+            <div className="list-item">• 86,3%: Low contrast text</div>
+            <div className="list-item">• 66%: Missing image alt text</div>
+            <div className="list-item">• 59,9%: Empty links</div>
+            <div className="list-item">• 53,8%: Missing form input labels</div>
+            <div className="list-item">• 28,7%: Empty buttons</div>
+            <div className="list-item">• 28%: Missing document language</div>
+          </div>
 
           <div className="divider"></div>
 
@@ -80,6 +82,8 @@ export default function badExample() {
           </div>
 
           <img src={cat.default.src} className="animal-image" />
+
+          <br />
 
           <div className="ordered-list">
             <div className="list-item">
@@ -106,6 +110,8 @@ export default function badExample() {
 
           <img src={nyanCat.default.src} className="animal-image" />
 
+          <br />
+
           <div className="input-wrapper">
             <div className="input-label">Enter your name:</div>
             <div contentEditable="true" className="user-input">
@@ -120,6 +126,8 @@ export default function badExample() {
             </div>
           </div>
 
+          <br />
+
           <a className="button">SUBMIT FORM</a>
 
           <div className="divider"></div>
@@ -129,6 +137,8 @@ export default function badExample() {
           <div className="heading-two">Input examples</div>
 
           <img src={horse.default.src} className="animal-image" />
+
+          <br />
 
           <div className="heading-three">Select your favorite ice cream:</div>
 
@@ -145,13 +155,8 @@ export default function badExample() {
           <RadioButton content="Opportunity" />
           <RadioButton content="Curiosity" />
           <RadioButton content="Perseverance" />
-
-          <div className="divider"></div>
         </div>
       </div>
     </>
   );
 }
-
-// TODO Links should be divs
-// TODO Add percentage to progress bar so it's hidden from screen reader
