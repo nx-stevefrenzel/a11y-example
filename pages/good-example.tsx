@@ -68,14 +68,14 @@ export default function goodExample() {
               <li>60.9 is the average number of errors per homepage</li>
             </ul>
             <h3>Causes of most common accessibility failures (% of websites)</h3>
-            <ol>
+            <ul>
               <li>86,3%: Low contrast text</li>
               <li>66%: Missing image alt text</li>
               <li>59,9%: Empty links</li>
               <li>53,8%: Missing form input labels</li>
               <li>28,7%: Empty buttons</li>
               <li>28%: Missing document language</li>
-            </ol>
+            </ul>
             <hr aria-hidden="true" />
             {/* List of links */}
             <h2>Check out this list of four great looking and accessible websites:</h2>
